@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.sirius.sample.basicfamily.feature"
+      label="Basic Family Sirius Designer Feature"
+      version="1.0.0.qualifier">
+
+   <description url="https://github.com/dariatd/BasicFamilyDesigner">
+      A sample Sirius designer.
+   </description>
+
+   <plugin
+         id="org.eclipse.sirius.sample.basicfamily"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.sample.basicfamily.advanced.design"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.sample.basicfamily.edit"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
