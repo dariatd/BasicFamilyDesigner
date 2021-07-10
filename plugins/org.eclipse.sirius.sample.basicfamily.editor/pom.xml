@@ -1,0 +1,14 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.eclipse.sirius.sample.basicfamily</groupId>
+	<artifactId>org.eclipse.sirius.sample.basicfamily.editor</artifactId>
+	<packaging>eclipse-plugin</packaging>
+	<version>1.1.0-SNAPSHOT</version>
+
+	<parent>
+		<groupId>org.eclipse.sirius.sample.basicfamily</groupId>
+		<artifactId>org.eclipse.sirius.sample.basicfamily.parent</artifactId>
+		<version>1.1.0-SNAPSHOT</version>
+		<relativePath>../../releng/org.eclipse.sirius.sample.basicfamily.parent</relativePath>
+	</parent>
+</project>
