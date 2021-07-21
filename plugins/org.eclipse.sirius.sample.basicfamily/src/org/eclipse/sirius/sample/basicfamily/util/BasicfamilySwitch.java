@@ -16,6 +16,8 @@ import java.util.List;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.util.Switch;
 import org.eclipse.sirius.sample.basicfamily.BasicfamilyPackage;
 import org.eclipse.sirius.sample.basicfamily.Family;
 import org.eclipse.sirius.sample.basicfamily.Man;
@@ -31,9 +33,9 @@ import org.eclipse.sirius.sample.basicfamily.Woman;
  * result of the switch. <!-- end-user-doc -->
  * 
  * @see org.eclipse.sirius.sample.basicfamily.BasicfamilyPackage
- * @generated
+ * @generated NOT
  */
-public class BasicfamilySwitch<T> {
+public class BasicfamilySwitch<T> extends Switch<T>{
     /**
      * The cached model package <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
@@ -53,6 +55,11 @@ public class BasicfamilySwitch<T> {
         }
     }
 
+    @Override
+	protected boolean isSwitchFor(EPackage ePackage) {
+		return ePackage == modelPackage;
+	}
+    
     /**
      * Calls <code>caseXXX</code> for each class of the model until one returns
      * a non null result; it yields that result. <!-- begin-user-doc --> <!--
